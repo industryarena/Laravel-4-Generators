@@ -52,7 +52,7 @@ abstract class GeneratorCommand extends Command {
     /**
      * Compile and generate the file.
      */
-    public function fire()
+    public function handle()
     {
         $filePathToGenerate = $this->getFileGenerationPath();
 
@@ -84,7 +84,7 @@ abstract class GeneratorCommand extends Command {
     {
         if ($path = $this->option($option)) return $path;
 
-        return Config::get("generators.config.{$configName}");
+        return config("generators.config.{$configName}");
     }
 
     /**
