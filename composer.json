@@ -1,5 +1,5 @@
 {
-    "name": "xethron/laravel-4-generators",
+    "name": "industryarena/laravel-4-generators",
     "description": "Rapidly generate resources, migrations, models, and much more.",
     "license": "MIT",
     "authors": [
@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "~5.0"
+        "illuminate/support": "~5.0|^5.8|^6.0"
     },
     "require-dev": {
         "phpspec/phpspec": "~2.0",
